@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio v.1</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
@@ -12,46 +16,52 @@
   </head>
   <body>
     <!--Шапка-->
-    <header>
+    <header class="head">
       <!--Навигация-->
-      <nav>
-        <!--Лого-->
-        <a href="/"
-          ><span class="logo-primary">Web</span
-          ><span class="logo-secondary">Studio</span></a
-        >
+      <div class="container">
+        <nav>
+          <!--Лого-->
+          <a href="/"
+            ><span class="logo-primary">Web</span
+            ><span class="logo-secondary">Studio</span></a
+          >
 
-        <!--Список страниц-->
-        <ul class="site-nav">
-          <li><a href="/" class="link current">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="/" class="link">Контакты</a></li>
-        </ul>
-      </nav>
+          <!--Список страниц-->
+          <ul class="site-nav">
+            <li><a href="/" class="link current">Студия</a></li>
+            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li><a href="/" class="link">Контакты</a></li>
+          </ul>
+        </nav>
 
-      <!--Список контактов-->
-      <address class="site-nav">
-        <a href="mailto:info@devstudio.com" class="link">
-          <img src="./images/envelope.svg" alt="конверт" />info@devstudio.com
-        </a>
+        <!--Список контактов-->
 
-        <a href="tel:380961111111" class="link">
-          <img src="./images/Vector_(1).svg" alt="телефон" />+38 096 111 11 11
-        </a>
-      </address>
+        <address class="site-nav">
+          <a href="mailto:info@devstudio.com" class="link">
+            info@devstudio.com
+          </a>
+
+          <a href="tel:380961111111" class="link">
+            +38 096 111 11 11
+          </a>
+        </address>
+      </div>
     </header>
 
     <!--Основной контент-->
     <main>
       <!--Сецкция ГЕРОЙ-->
-      <section>
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+      <section class="hero">
+        <h1 class="hero-title">
+          Эффективные решения для вашего бизнеса
+        </h1>
+
         <a href="/" class="button-secondary">Заказать услугу </a>
       </section>
 
       <!--Сецкция ФИТЧИ-->
-      <section>
-        <ul>
+      <section class="container section-box">
+        <ul class="list">
           <!--Внимание к деталям-->
           <li>
             <img
@@ -119,9 +129,9 @@
       </section>
 
       <!--Сецкция Чем мы занимаемся-->
-      <section>
+      <section class="container section-box">
         <h2 class="wawd-title">Чем мы занимаемся</h2>
-        <ul>
+        <ul class="list">
           <!--ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ-->
           <li>
             <img
@@ -155,19 +165,20 @@
       </section>
 
       <!--Сецкция Наша команда-->
-      <section class="team-box">
+      <section class="team-box container">
         <h2 class="team-title">Наша команда</h2>
-        <ul>
+        <ul class="list team-list">
           <!--Product Designer-->
           <li>
             <img
               src="./images/team/img.jpg"
               alt="Photo Product Designer"
               width="270"
+              class="workers-photo"
             />
             <h3 class="member-title">Николай Кучеренко</h3>
             <p class="postposition" lang="en">Product Designer</p>
-            <ul>
+            <ul class="list">
               <li>
                 <a
                   href="https://www.instagram.com/?hl=ru"
@@ -199,10 +210,11 @@
               src="./images/team/img_(1).jpg"
               alt="Photo Frontend Developer"
               width="270"
+              class="workers-photo"
             />
             <h3 class="member-title">Ольга Иванова</h3>
             <p class="postposition" lang="en">Frontend Developer</p>
-            <ul>
+            <ul class="list">
               <li>
                 <a
                   href="https://www.instagram.com/?hl=ru"
@@ -234,10 +246,11 @@
               src="./images/team/img_(2).jpg"
               alt="Photo Marketing"
               width="270"
+              class="workers-photo"
             />
             <h3 class="member-title">Андрей Шевченко</h3>
             <p class="postposition" lang="en">Marketing</p>
-            <ul>
+            <ul class="list">
               <li>
                 <a
                   href="https://www.instagram.com/?hl=ru"
@@ -269,10 +282,11 @@
               src="./images/team/img_(3).jpg"
               alt="Photo UI Designer"
               width="270"
+              class="workers-photo"
             />
             <h3 class="member-title">Иван Николаев</h3>
             <p class="postposition" lang="en">UI Designer</p>
-            <ul>
+            <ul class="list">
               <li>
                 <a
                   href="https://www.instagram.com/?hl=ru"
@@ -301,10 +315,10 @@
       </section>
 
       <!--Сецкция Наши Клиенты-->
-      <section>
+      <section class="container">
         <h2 class="clients-title">Постоянные клиенты</h2>
 
-        <ul>
+        <ul class="list">
           <!--Компания 1-->
           <li>
             <a href="/" class="clients-site-link">YA&CO</a>
@@ -341,58 +355,62 @@
     <!--Подвал-->
     <footer class="box">
       <!--Лого-->
-      <a href="/"
-        ><span class="f-logo-primary">Web</span
-        ><span class="f-logo-secondary">Studio</span></a
-      >
-
-      <!--Контакты-->
-      <address class="f-site-nav">
-        <p class="address-city">г. Киев, пр-т Леси Украинки, 26</p>
-
-        <a href="mailto:info@devstudio.com" class="f-link"
-          >info@devstudio.com</a
+      <div class="container">
+        <a href="/"
+          ><span class="f-logo-primary">Web</span
+          ><span class="f-logo-secondary">Studio</span></a
         >
 
-        <a href="tel:380961111111" class="f-link">
-          +38 096 111 11 11
-        </a>
-      </address>
+        <!--Контакты-->
+        <address class="f-site-nav">
+          <p class="address-city">г. Киев, пр-т Леси Украинки, 26</p>
 
-      <!--Соц. Сети-->
-      <section>
-        <h3 class="conecting-title">Присоединяйтесь</h3>
-        <ul>
-          <!--Instagram-->
-          <li>
-            <a href="https://www.instagram.com/?hl=ru" class="f-socialnet-link"
-              >Instagram</a
-            >
-          </li>
+          <a href="mailto:info@devstudio.com" class="f-link"
+            >info@devstudio.com</a
+          >
 
-          <!--Twitter-->
-          <li>
-            <a href="https://twitter.com/explore" class="f-socialnet-link"
-              >Twitter</a
-            >
-          </li>
+          <a href="tel:380961111111" class="f-link">
+            +38 096 111 11 11
+          </a>
+        </address>
 
-          <!--Facebook-->
-          <li>
-            <a href="https://uk-ua.facebook.com/" class="f-socialnet-link"
-              >Facebook</a
-            >
-          </li>
+        <!--Соц. Сети-->
+        <section>
+          <h3 class="conecting-title">Присоединяйтесь</h3>
+          <ul class="list">
+            <!--Instagram-->
+            <li>
+              <a
+                href="https://www.instagram.com/?hl=ru"
+                class="f-socialnet-link"
+                >Instagram</a
+              >
+            </li>
 
-          <!--Linkedin-->
-          <li>
-            <a href="https://ua.linkedin.com/" class="f-socialnet-link"
-              >Linkedin</a
-            >
-          </li>
-        </ul>
-      </section>
-      <p class="developed">2020 | Developed by GoIT Students</p>
+            <!--Twitter-->
+            <li>
+              <a href="https://twitter.com/explore" class="f-socialnet-link"
+                >Twitter</a
+              >
+            </li>
+
+            <!--Facebook-->
+            <li>
+              <a href="https://uk-ua.facebook.com/" class="f-socialnet-link"
+                >Facebook</a
+              >
+            </li>
+
+            <!--Linkedin-->
+            <li>
+              <a href="https://ua.linkedin.com/" class="f-socialnet-link"
+                >Linkedin</a
+              >
+            </li>
+          </ul>
+        </section>
+        <p class="developed">2020 | Developed by GoIT Students</p>
+      </div>
     </footer>
   </body>
 </html>
