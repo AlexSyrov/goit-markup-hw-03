@@ -16,26 +16,28 @@
   </head>
   <body>
     <!--Шапка-->
-    <header class="head">
+    <header class="head-container">
       <!--Навигация-->
-      <div class="container">
-        <nav>
-          <!--Лого-->
-          <a href="/"
-            ><span class="logo-primary">Web</span
-            ><span class="logo-secondary">Studio</span></a
-          >
 
-          <!--Список страниц-->
+      <nav>
+        <!--Лого-->
+        <a href="/"
+          ><span class="logo-primary">Web</span>
+          <span class="logo-secondary">Studio</span></a
+        >
+
+        <!--Список страниц-->
+        <div>
           <ul class="site-nav">
             <li><a href="/" class="link current">Студия</a></li>
             <li><a href="./portfolio.html" class="link">Портфолио</a></li>
             <li><a href="/" class="link">Контакты</a></li>
           </ul>
-        </nav>
+        </div>
+      </nav>
 
-        <!--Список контактов-->
-
+      <!--Список контактов-->
+      <div>
         <address class="site-nav">
           <a href="mailto:info@devstudio.com" class="link">
             info@devstudio.com
@@ -138,6 +140,7 @@
               src="./images/what_are_we_doing/laptop.jpg"
               alt="Ноутбук"
               width="370"
+              class="wawd-img"
             />
             <h3 class="wawd-item">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
           </li>
@@ -148,6 +151,7 @@
               src="./images/what_are_we_doing/smartphone.jpg"
               alt="Смартфон"
               width="370"
+              class="wawd-img"
             />
             <h3 class="wawd-item">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
           </li>
@@ -158,6 +162,7 @@
               src="./images/what_are_we_doing/screen.jpg"
               alt="Монитор"
               width="370"
+              class="wawd-img"
             />
             <h3 class="wawd-item">ДЕЗАЙНИРСКИЕ РЕШЕНИЯ</h3>
           </li>
@@ -355,7 +360,7 @@
     <!--Подвал-->
     <footer class="box">
       <!--Лого-->
-      <div class="container">
+      <div class="head-container">
         <a href="/"
           ><span class="f-logo-primary">Web</span
           ><span class="f-logo-secondary">Studio</span></a
