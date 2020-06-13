@@ -19,35 +19,33 @@
     <header class="head-container">
       <!--Навигация-->
 
-      <nav>
+      <nav class="nav-flex">
         <!--Лого-->
         <a href="/"
           ><span class="logo-primary">Web</span>
           <span class="logo-secondary">Studio</span></a
         >
-
         <!--Список страниц-->
-        <div>
-          <ul class="site-nav">
-            <li><a href="/" class="link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="/" class="link">Контакты</a></li>
-          </ul>
-        </div>
+        <ul class="site-nav">
+          <li class="item"><a href="/" class="link current">Студия</a></li>
+          <li class="item">
+            <a href="./portfolio.html" class="link">Портфолио</a>
+          </li>
+          <li class="item"><a href="/" class="link">Контакты</a></li>
+        </ul>
       </nav>
 
       <!--Список контактов-->
-      <div>
-        <address class="site-nav">
-          <a href="mailto:info@devstudio.com" class="link">
-            info@devstudio.com
-          </a>
 
-          <a href="tel:380961111111" class="link">
-            +38 096 111 11 11
-          </a>
-        </address>
-      </div>
+      <address class="site-nav-ad">
+        <a href="mailto:info@devstudio.com" class="link">
+          info@devstudio.com
+        </a>
+
+        <a href="tel:380961111111" class="link">
+          +38 096 111 11 11
+        </a>
+      </address>
     </header>
 
     <!--Основной контент-->
@@ -63,15 +61,15 @@
 
       <!--Сецкция ФИТЧИ-->
       <section class="container section-box">
-        <ul class="list">
+        <ul class="list feature-flex">
           <!--Внимание к деталям-->
-          <li>
+          <li class="feature-item">
             <img
               src="./images/feature/antenna_1.svg"
               alt="АНТЕНА"
               class="features-img"
-              width="70"
-              height="70"
+              width="270"
+              height="120"
             />
             <h3 class="features-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
             <p class="features-text">
@@ -81,13 +79,13 @@
           </li>
 
           <!--Пунктуальность-->
-          <li>
+          <li class="feature-item">
             <img
               src="./images/feature/clock_1.svg"
               class="features-img"
               alt="ЧАСЫ"
-              width="70"
-              height="70"
+              width="270"
+              height="120"
             />
             <h3 class="features-title">ПУНКТУАЛЬНОСТЬ</h3>
             <p class="features-text">
@@ -97,13 +95,13 @@
           </li>
 
           <!--Планирование-->
-          <li>
+          <li class="feature-item">
             <img
               src="./images/feature/diagram_1.svg"
               class="features-img"
               alt="ДИАГРАММА"
-              width="70"
-              height="70"
+              width="270"
+              height="120"
             />
             <h3 class="features-title">ПЛАНИРОВАНИЕ</h3>
             <p class="features-text">
@@ -113,13 +111,13 @@
           </li>
 
           <!--Современные технологии-->
-          <li>
+          <li class="feature-item">
             <img
               src="./images/feature/astronaut_1.svg"
               class="features-img"
               alt="Астронавт"
-              width="70"
-              height="70"
+              width="270"
+              height="120"
             />
             <h3 class="features-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
             <p class="features-text">
@@ -133,7 +131,7 @@
       <!--Сецкция Чем мы занимаемся-->
       <section class="container section-box">
         <h2 class="wawd-title">Чем мы занимаемся</h2>
-        <ul class="list">
+        <ul class="list wawd-flex">
           <!--ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ-->
           <li>
             <img
@@ -146,7 +144,7 @@
           </li>
 
           <!--МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ-->
-          <li>
+          <li class="img-wawd">
             <img
               src="./images/what_are_we_doing/smartphone.jpg"
               alt="Смартфон"
@@ -157,7 +155,7 @@
           </li>
 
           <!--ДЕЗАЙНИРСКИЕ РЕШЕНИЯ-->
-          <li>
+          <li class="img-wawd">
             <img
               src="./images/what_are_we_doing/screen.jpg"
               alt="Монитор"
@@ -172,149 +170,157 @@
       <!--Сецкция Наша команда-->
       <section class="team-box container">
         <h2 class="team-title">Наша команда</h2>
-        <ul class="list team-list">
+        <ul class="team-list team-flex">
           <!--Product Designer-->
-          <li>
+          <li class="photo-workers">
             <img
               src="./images/team/img.jpg"
               alt="Photo Product Designer"
               width="270"
               class="workers-photo"
             />
-            <h3 class="member-title">Николай Кучеренко</h3>
-            <p class="postposition" lang="en">Product Designer</p>
-            <ul class="list">
-              <li>
-                <a
-                  href="https://www.instagram.com/?hl=ru"
-                  class="socialnet-link"
-                  >Instagram</a
-                >
-              </li>
-              <li>
-                <a href="https://twitter.com/explore" class="socialnet-link"
-                  >Twitter</a
-                >
-              </li>
-              <li>
-                <a href="https://uk-ua.facebook.com/" class="socialnet-link"
-                  >Facebook</a
-                >
-              </li>
-              <li>
-                <a href="https://ua.linkedin.com/" class="socialnet-link"
-                  >Linkedin</a
-                >
-              </li>
-            </ul>
+            <div class="info-container">
+              <h3 class="member-title">Николай Кучеренко</h3>
+              <p class="postposition" lang="en">Product Designer</p>
+              <ul class="list sl-flex">
+                <li>
+                  <a
+                    href="https://www.instagram.com/?hl=ru"
+                    class="socialnet-link"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="https://twitter.com/explore" class="socialnet-link"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a href="https://uk-ua.facebook.com/" class="socialnet-link"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a href="https://ua.linkedin.com/" class="socialnet-link"
+                    >Linkedin</a
+                  >
+                </li>
+              </ul>
+            </div>
           </li>
 
           <!--Frontend Developer-->
-          <li>
+          <li class="photo-workers">
             <img
               src="./images/team/img_(1).jpg"
               alt="Photo Frontend Developer"
               width="270"
               class="workers-photo"
             />
-            <h3 class="member-title">Ольга Иванова</h3>
-            <p class="postposition" lang="en">Frontend Developer</p>
-            <ul class="list">
-              <li>
-                <a
-                  href="https://www.instagram.com/?hl=ru"
-                  class="socialnet-link"
-                  >Instagram
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/explore" class="socialnet-link"
-                  >Twitter
-                </a>
-              </li>
-              <li>
-                <a href="https://uk-ua.facebook.com/" class="socialnet-link"
-                  >Facebook
-                </a>
-              </li>
-              <li>
-                <a href="https://ua.linkedin.com/" class="socialnet-link"
-                  >Linkedin
-                </a>
-              </li>
-            </ul>
+            <div class="info-container">
+              <h3 class="member-title">Ольга Иванова</h3>
+              <p class="postposition" lang="en">Frontend Developer</p>
+              <ul class="list sl-flex">
+                <li>
+                  <a
+                    href="https://www.instagram.com/?hl=ru"
+                    class="socialnet-link"
+                    >Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/explore" class="socialnet-link"
+                    >Twitter
+                  </a>
+                </li>
+                <li>
+                  <a href="https://uk-ua.facebook.com/" class="socialnet-link"
+                    >Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="https://ua.linkedin.com/" class="socialnet-link"
+                    >Linkedin
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
 
           <!--Marketing-->
-          <li>
+          <li class="photo-workers">
             <img
               src="./images/team/img_(2).jpg"
               alt="Photo Marketing"
               width="270"
               class="workers-photo"
             />
-            <h3 class="member-title">Андрей Шевченко</h3>
-            <p class="postposition" lang="en">Marketing</p>
-            <ul class="list">
-              <li>
-                <a
-                  href="https://www.instagram.com/?hl=ru"
-                  class="socialnet-link"
-                  >Instagram
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/explore" class="socialnet-link"
-                  >Twitter
-                </a>
-              </li>
-              <li>
-                <a href="https://uk-ua.facebook.com/" class="socialnet-link"
-                  >Facebook
-                </a>
-              </li>
-              <li>
-                <a href="https://ua.linkedin.com/" class="socialnet-link"
-                  >Linkedin
-                </a>
-              </li>
-            </ul>
+            <div class="info-container">
+              <h3 class="member-title">Андрей Шевченко</h3>
+              <p class="postposition" lang="en">Marketing</p>
+              <ul class="list sl-flex">
+                <li>
+                  <a
+                    href="https://www.instagram.com/?hl=ru"
+                    class="socialnet-link"
+                    >Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/explore" class="socialnet-link"
+                    >Twitter
+                  </a>
+                </li>
+                <li>
+                  <a href="https://uk-ua.facebook.com/" class="socialnet-link"
+                    >Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="https://ua.linkedin.com/" class="socialnet-link"
+                    >Linkedin
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
 
           <!--UI Designer-->
-          <li>
+          <li class="photo-workers">
             <img
               src="./images/team/img_(3).jpg"
               alt="Photo UI Designer"
               width="270"
               class="workers-photo"
             />
-            <h3 class="member-title">Иван Николаев</h3>
-            <p class="postposition" lang="en">UI Designer</p>
-            <ul class="list">
-              <li>
-                <a
-                  href="https://www.instagram.com/?hl=ru"
-                  class="socialnet-link"
-                  >Instagram
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/explore" class="socialnet-link"
-                  >Twitter
-                </a>
-              </li>
-              <li>
-                <a href="https://uk-ua.facebook.com/" class="socialnet-link"
-                  >Facebook
-                </a>
-              </li>
-              <li>
-                <a href="https://ua.linkedin.com/" class="socialnet-link"
-                  >Linkedin
-                </a>
-              </li>
-            </ul>
+            <div class="info-container">
+              <h3 class="member-title">Иван Николаев</h3>
+              <p class="postposition" lang="en">UI Designer</p>
+              <ul class="list sl-flex">
+                <li>
+                  <a
+                    href="https://www.instagram.com/?hl=ru"
+                    class="socialnet-link"
+                    >Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/explore" class="socialnet-link"
+                    >Twitter
+                  </a>
+                </li>
+                <li>
+                  <a href="https://uk-ua.facebook.com/" class="socialnet-link"
+                    >Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="https://ua.linkedin.com/" class="socialnet-link"
+                    >Linkedin
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </section>
@@ -323,34 +329,34 @@
       <section class="container">
         <h2 class="clients-title">Постоянные клиенты</h2>
 
-        <ul class="list">
+        <ul class="list clients-flex">
           <!--Компания 1-->
-          <li>
+          <li class="client-item">
             <a href="/" class="clients-site-link">YA&CO</a>
           </li>
 
           <!--Компания 2-->
-          <li>
+          <li class="client-item">
             <a href="/" class="clients-site-link">Company Tagline here </a>
           </li>
 
           <!--Компания 3-->
-          <li>
+          <li class="client-item">
             <a href="/" class="clients-site-link">Company </a>
           </li>
 
           <!--Компания 4-->
-          <li>
+          <li class="client-item">
             <a href="/" class="clients-site-link">Foster Peters </a>
           </li>
 
           <!--Компания 5-->
-          <li>
+          <li class="client-item">
             <a href="/" class="clients-site-link">Brand </a>
           </li>
 
           <!--Компания 6-->
-          <li>
+          <li class="client-item">
             <a href="/" class="clients-site-link">Company Tagline </a>
           </li>
         </ul>
@@ -360,31 +366,33 @@
     <!--Подвал-->
     <footer class="box">
       <!--Лого-->
-      <div class="head-container">
-        <a href="/"
-          ><span class="f-logo-primary">Web</span
-          ><span class="f-logo-secondary">Studio</span></a
-        >
-
-        <!--Контакты-->
-        <address class="f-site-nav">
-          <p class="address-city">г. Киев, пр-т Леси Украинки, 26</p>
-
-          <a href="mailto:info@devstudio.com" class="f-link"
-            >info@devstudio.com</a
+      <div class="f-head-container">
+        <div>
+          <a href="/"
+            ><span class="f-logo-primary">Web</span>
+            <span class="f-logo-secondary">Studio</span></a
           >
 
-          <a href="tel:380961111111" class="f-link">
-            +38 096 111 11 11
-          </a>
-        </address>
+          <!--Контакты-->
+          <address class="f-site-nav">
+            <p class="address-city">г. Киев, пр-т Леси Украинки, 26</p>
+
+            <a href="mailto:info@devstudio.com" class="f-link"
+              >info@devstudio.com</a
+            >
+
+            <a href="tel:380961111111" class="f-link">
+              +38 096 111 11 11
+            </a>
+          </address>
+        </div>
 
         <!--Соц. Сети-->
-        <section>
+        <section class="conecting">
           <h3 class="conecting-title">Присоединяйтесь</h3>
-          <ul class="list">
+          <ul class="list f-link">
             <!--Instagram-->
-            <li>
+            <li class="f-snl">
               <a
                 href="https://www.instagram.com/?hl=ru"
                 class="f-socialnet-link"
@@ -393,29 +401,30 @@
             </li>
 
             <!--Twitter-->
-            <li>
+            <li class="f-snl">
               <a href="https://twitter.com/explore" class="f-socialnet-link"
                 >Twitter</a
               >
             </li>
 
             <!--Facebook-->
-            <li>
+            <li class="f-snl">
               <a href="https://uk-ua.facebook.com/" class="f-socialnet-link"
                 >Facebook</a
               >
             </li>
 
             <!--Linkedin-->
-            <li>
+            <li class="f-snl">
               <a href="https://ua.linkedin.com/" class="f-socialnet-link"
                 >Linkedin</a
               >
             </li>
           </ul>
         </section>
-        <p class="developed">2020 | Developed by GoIT Students</p>
       </div>
+
+      <p class="developed">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>
