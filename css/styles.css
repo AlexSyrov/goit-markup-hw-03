@@ -294,12 +294,10 @@ a {
 }
 
 /* what are we doing */
-.wawd-title,
-.clients-title {
+.wawd-title {
   color: var(--title-text-color);
   margin-top: 0;
   margin-bottom: 50px;
-  padding-top: 94px;
 
   font-weight: 700;
   font-size: 36px;
@@ -355,6 +353,7 @@ a {
   color: var(--title-text-color);
   margin-bottom: 0px;
   margin-top: 0px;
+  padding-top: 94px;
 
   font-weight: 700;
   font-size: 36px;
@@ -407,6 +406,18 @@ a {
 }
 
 /* clients */
+.clients-title {
+  color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 94px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.18;
+
+  text-align: center;
+}
 
 .clients-site-link {
   color: var(--icon-color);
