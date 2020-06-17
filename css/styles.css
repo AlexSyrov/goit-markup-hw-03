@@ -46,6 +46,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  padding-top: 94px;
 
   padding-left: 15px;
   padding-right: 15px;
@@ -109,7 +110,6 @@ a {
   color: var(--title-text-color);
   margin-top: 0;
   margin-bottom: 50px;
-  padding-top: 94px;
 
   font-weight: 700;
   font-size: 36px;
@@ -199,7 +199,6 @@ a {
 /* hero title */
 .hero {
   text-align: center;
-  padding-bottom: 94px;
 }
 
 .hero-title {
