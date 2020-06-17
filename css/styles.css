@@ -77,18 +77,18 @@ a {
 .site-nav-ad {
   align-items: center;
 }
-.feature-flex {
+
+.features-flex {
   display: flex;
-  width: calc((100% - 30px * 3) / 4);
 }
+
 .wawd-flex {
   display: flex;
-  width: calc((100% - 30px * 2) / 3);
+  padding-bottom: 94px;
 }
 
 .team-flex {
   display: flex;
-  width: calc((100% - 30px * 3) / 4);
 }
 .sl-flex {
   display: flex;
@@ -103,6 +103,19 @@ a {
 .project-flex {
   display: flex;
   flex-wrap: wrap;
+}
+
+.title {
+  color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 94px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.18;
+
+  text-align: center;
 }
 
 /* logo */
@@ -262,6 +275,9 @@ a {
 .section-box {
   padding-bottom: 94px;
 }
+.feature-width {
+  width: calc((100% - 30px * 3) / 4);
+}
 
 .feature-item {
   margin-right: 30px;
@@ -294,17 +310,7 @@ a {
 }
 
 /* what are we doing */
-.wawd-title {
-  color: var(--title-text-color);
-  margin-top: 0;
-  margin-bottom: 50px;
 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.18;
-
-  text-align: center;
-}
 .wawd-img {
   display: block;
 }
@@ -329,7 +335,7 @@ a {
 }
 
 .wawd-box {
-  width: 370px;
+  width: calc((100% - 30px * 2) / 3);
 }
 /* Team */
 .team-box {
@@ -342,25 +348,13 @@ a {
 
 .photo-workers {
   margin-right: 30px;
-  width: 270px;
+  width: calc((100% - 30px * 3) / 4);
 }
 .photo-workers:last-child {
   margin-right: 0;
   width: 270px;
 }
 
-.team-title {
-  color: var(--title-text-color);
-  margin-bottom: 0px;
-  margin-top: 0px;
-  padding-top: 94px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.18;
-
-  text-align: center;
-}
 .team-list {
   padding-top: 50px;
 
@@ -406,18 +400,6 @@ a {
 }
 
 /* clients */
-.clients-title {
-  color: var(--title-text-color);
-  margin-top: 0;
-  margin-bottom: 50px;
-  padding-top: 94px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.18;
-
-  text-align: center;
-}
 
 .clients-site-link {
   color: var(--icon-color);
