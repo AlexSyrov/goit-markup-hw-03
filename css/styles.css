@@ -51,13 +51,7 @@ a {
   padding-right: 15px;
 }
 .f-head-container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 45px;
+  padding-top: 72px;
   display: flex;
 }
 
