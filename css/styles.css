@@ -60,10 +60,6 @@ a {
   align-items: center;
 }
 
-.conecting {
-  margin-left: 69px;
-}
-
 .nav-flex {
   display: flex;
   align-items: center;
@@ -433,6 +429,9 @@ a {
   font-size: 26px;
   line-height: 1.19px;
 }
+.logo-address {
+  width: calc((100% - 60px) / 4);
+}
 .address-city {
   color: var(--white-color);
   font-style: normal;
@@ -455,6 +454,10 @@ a {
 .f-site-nav .f-link:focus {
   color: var(--accent-color);
 }
+.conecting {
+  width: calc((100% - 60px) / 4);
+}
+
 .conecting-title {
   color: var(--white-color);
   font-style: normal;
@@ -471,6 +474,9 @@ a {
 .f-socialnet-link:hover,
 .f-socialnet-link:focus {
   color: var(--accent-color);
+}
+.subscribe {
+  width: calc((100% - 60px) / 2);
 }
 .developed {
   color: rgba(255, 255, 255, 40%);
